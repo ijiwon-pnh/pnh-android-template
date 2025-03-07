@@ -18,7 +18,12 @@ abstract class BaseFragment<VB : ViewBinding, VM : ViewModel>(
         super.onViewCreated(view, savedInstanceState)
 
         setupViews()
+
+        setupObservers()
     }
 
     abstract fun setupViews()
+
+    open fun setupObservers() {
+    }
 }
