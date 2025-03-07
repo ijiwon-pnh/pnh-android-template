@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">OviPay</string>
+
+    <string name="str_unknown">알수없음</string>
+    <string name="time1">지금</string>
+    <string name="time2">분전</string>
+    <string name="time3">시간전</string>
+    <string name="time4">일전</string>
+    <string name="time5">달전</string>
+    <string name="time6">년전</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
