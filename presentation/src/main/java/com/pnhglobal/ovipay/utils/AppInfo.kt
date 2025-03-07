@@ -12,6 +12,7 @@ import android.util.Base64
 import android.util.Log
 import android.webkit.WebView
 import androidx.core.content.ContextCompat
+import com.pnhglobal.ovipay.BuildConfig
 import java.net.NetworkInterface
 import java.util.Collections
 import java.util.Locale
