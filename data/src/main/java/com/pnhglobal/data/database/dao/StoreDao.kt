@@ -12,12 +12,12 @@ import com.pnhglobal.data.database.entity.store.StoreEntity
 @Dao
 interface StoreDao {
     @Query(
-        "SELECT * FROM store ORDER BY store_id DESC"
+        "SELECT * FROM store ORDER BY id DESC"
     )
     fun getStoreList(): PagingSource<Int, StoreEntity>
 
     @Query(
-        "SELECT * FROM store WHERE store_id = :storeId"
+        "SELECT * FROM store WHERE id = :storeId"
     )
     fun getStore(storeId: Int): StoreEntity
 
