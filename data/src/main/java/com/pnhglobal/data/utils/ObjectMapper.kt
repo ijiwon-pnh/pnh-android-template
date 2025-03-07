@@ -14,6 +14,6 @@ fun NetworkStore.toDomain(): Store = Store(
 )
 
 fun StoreEntity.toDomain(): Store = Store(
-    id = this.storeId,
-    name = this.storeName,
+    id = this.id,
+    name = this.name,
 )

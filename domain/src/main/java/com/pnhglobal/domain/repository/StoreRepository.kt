@@ -6,9 +6,7 @@ import kotlinx.coroutines.flow.Flow
 
 interface StoreRepository {
 
-    fun getStoreList(
-        page: Int?,
-        limit: Int?,
+    fun getNearbyStores(
         sort: Int?,
         searchText: String?,
     ): Flow<PagingData<Store>>

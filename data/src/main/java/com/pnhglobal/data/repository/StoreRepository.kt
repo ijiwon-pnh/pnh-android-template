@@ -24,14 +24,12 @@ class StoreRepositoryImpl @Inject constructor(
 ) : StoreRepository {
 
     @OptIn(ExperimentalPagingApi::class)
-    override fun getStoreList(
-        page: Int?,
-        limit: Int?,
+    override fun getNearbyStores(
         sort: Int?,
         searchText: String?,
     ): Flow<PagingData<Store>> {
         val config = PagingConfig(
-            pageSize = limit ?: 20,
+            pageSize = 20,
             prefetchDistance = 2,
             initialLoadSize = 1,
         )
@@ -41,8 +39,8 @@ class StoreRepositoryImpl @Inject constructor(
                 remoteDataSource = remoteDataSource,
                 localDataSource = localDataSource,
                 request = GetStoreListRequest(
-                    page = page,
-                    limit = limit,
+                    page = 20,
+                    limit = 0,
                     sort = sort,
                     searchText = searchText,
                 ),

@@ -3,7 +3,7 @@ package com.pnhglobal.domain.di
 import com.pnhglobal.domain.repository.StoreRepository
 import com.pnhglobal.domain.repository.UserRepository
 import com.pnhglobal.domain.usecase.store.GetStoreDetailUseCase
-import com.pnhglobal.domain.usecase.store.GetStoreListUseCase
+import com.pnhglobal.domain.usecase.store.GetNearbyStoresUseCase
 import com.pnhglobal.domain.usecase.user.GetUserInfoUseCase
 import com.pnhglobal.domain.usecase.user.SignInUseCase
 import com.pnhglobal.domain.usecase.user.SignUpUseCase
@@ -45,5 +45,5 @@ object UseCaseModule {
     @Singleton
     fun provideRequestGetStoreListUseCase(
         repository: StoreRepository
-    ): GetStoreListUseCase = GetStoreListUseCase(repository)
+    ): GetNearbyStoresUseCase = GetNearbyStoresUseCase(repository)
 }
