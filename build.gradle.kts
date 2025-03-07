@@ -5,4 +5,5 @@ plugins {
     alias(libs.plugins.android.library) apply false
     alias(libs.plugins.androidx.navigation.safeargs.kotlin) apply false
     alias(libs.plugins.google.dagger.hilt.android) apply false
+    alias(libs.plugins.ksp) apply false
 }

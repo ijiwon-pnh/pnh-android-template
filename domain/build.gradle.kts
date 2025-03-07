@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    id("kotlin-kapt")
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -33,14 +33,14 @@ dependencies {
     testImplementation(libs.kotlin.stdlib)
 
     // JavaX Inject
-    implementation(libs.javax.inject)
+    // implementation(libs.javax.inject)
 
     // Coroutine
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
 
     implementation(libs.hilt.android)
-    kapt(libs.hilt.android.compiler)
+    ksp(libs.hilt.android.compiler)
 
     // Paging 3.0
     implementation(libs.androidx.paging.runtime.ktx)

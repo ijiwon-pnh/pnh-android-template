@@ -1,5 +1,5 @@
 [versions]
-agp = "8.8.2"
+agp = "8.9.0"
 kotlin = "2.1.10"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -10,7 +10,7 @@ material = "1.12.0"
 datastorePreferencesVersion = "1.1.3"
 datastorePreferencesCore = "1.1.3"
 room = "2.6.1"
-hilt = "2.46"
+hilt = "2.55"
 navigation = "2.8.8"
 okhttp = "4.10.0"
 retrofit = "2.9.0"
@@ -21,14 +21,14 @@ kotlinStdlib = "1.9.24"
 monitor = "1.7.2"
 junitKtx = "1.2.1"
 javaxInject = "1"
-lifecycleViewmodelAndroid = "2.8.7"
+lifecycle = "2.8.7"
 constraintlayout = "2.2.1"
 activityKtx = "1.10.1"
 fragmentKtx = "1.8.6"
-lifecycleRuntimeKtx = "2.8.7"
 coil = "2.3.0"
 activity = "1.10.1"
 viewBindingPropertyDelegate = "2.0.4"
+ksp = "2.1.10-1.0.31"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -60,12 +60,12 @@ kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "
 androidx-monitor = { group = "androidx.test", name = "monitor", version.ref = "monitor" }
 androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
 javax-inject = { module = "javax.inject:javax.inject", version.ref = "javaxInject" }
-androidx-lifecycle-viewmodel-android = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-android", version.ref = "lifecycleViewmodelAndroid" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
 androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
-androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
-androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-viewmodel-android = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-android", version.ref = "lifecycle" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
 coil = { module = "io.coil-kt:coil", version.ref = "coil" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 view-binding-property-delegate = { module = "dev.androidbroadcast.vbpd:vbpd", version.ref = "viewBindingPropertyDelegate" }
@@ -76,4 +76,5 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 androidx-navigation-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigation" }
 google-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 

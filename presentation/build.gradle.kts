@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("kotlin-kapt")
+    alias(libs.plugins.ksp)
     alias(libs.plugins.androidx.navigation.safeargs.kotlin)
     alias(libs.plugins.google.dagger.hilt.android)
 }
@@ -72,7 +72,7 @@ dependencies {
 
     // Hilt
     implementation(libs.hilt.android)
-    kapt(libs.hilt.android.compiler)
+    ksp(libs.hilt.android.compiler)
 
     // Retrofit + Okhttp
     implementation(libs.retrofit2.retrofit)
@@ -102,7 +102,7 @@ dependencies {
     implementation(libs.androidx.room.ktx)
     implementation(libs.androidx.room.paging)
     //noinspection KaptUsageInsteadOfKsp
-    kapt(libs.androidx.room.compiler)
+    ksp(libs.androidx.room.compiler)
 
     // Coroutine
     implementation(libs.kotlinx.coroutines.core)
@@ -120,8 +120,4 @@ dependencies {
     implementation(libs.coil)
 
     implementation(libs.view.binding.property.delegate)
-}
-
-kapt {
-    correctErrorTypes = true
 }
